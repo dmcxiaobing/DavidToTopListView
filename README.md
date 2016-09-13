@@ -38,7 +38,8 @@
 </RelativeLayout>
 ```
 然后我们需要一个获取屏幕的一个工具类，这里我封装好了，：
-`packagedavidtotoplistview.qq986945193.davidtotoplistview.davidtotoplistview;
+```
+package davidtotoplistview.qq986945193.davidtotoplistview.davidtotoplistview;
 
 import android.content.Context;
 import android.view.Display;
@@ -117,7 +118,8 @@ public class ScreenUtil {
 		return view.getRight();
 	}
 
-}`
+}
+```
 好了，然后我们需要一个adapter，就是现实列表的一个简单的textview
 ```
 package davidtotoplistview.qq986945193.davidtotoplistview.davidtotoplistview;
