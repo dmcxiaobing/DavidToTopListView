@@ -1,12 +1,23 @@
 # DavidToTopListView
 【Android】Listview返回顶部，快速返回顶部的功能实现，详解代码。
+
 作者：程序员小冰，GitHub主页：https://github.com/QQ986945193 
+
 新浪微博：http://weibo.com/mcxiaobing 
+
 首先给大家看一下我们今天这个最终实现的效果图： 
+
 ![这里写图片描述](http://img.blog.csdn.net/20160913110545220)
+
 我这里只是单纯的实现了ListView返回顶部的功能。具体效果大家可以适当地美化 
+
 在实际项目中可以换图标，去掉右侧滚动条等。具体ui美化不做解释。 
-好了，首先我们是当不在顶部的时候，返回顶部按钮就会出现，而到顶部之后就会隐藏此按钮，所以我们这里就要算Listview的滑动偏移量，当然，有这个返回顶部按钮，而且一直显示在底部，所以当然用相对布局了。先给大家看一下xml布局源码比较简单：
+
+好了，首先我们是当不在顶部的时候，返回顶部按钮就会出现，而到顶部之后就会隐藏此按钮，
+
+所以我们这里就要算Listview的滑动偏移量，当然，有这个返回顶部按钮，而且一直显示在底部，
+
+所以当然用相对布局了。先给大家看一下xml布局源码比较简单：
 
 ```
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -359,4 +370,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 最后直接运行即可看到上面的效果。如果对您有帮助，欢迎star，fork。。。
 
 姊妹篇：Scrollview返回顶部，快速返回顶部的功能实现详解链接：
+
 http://blog.csdn.net/qq_21376985/article/details/52511303
